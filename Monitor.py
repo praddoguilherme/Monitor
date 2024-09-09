@@ -13,7 +13,7 @@ import threading
 
 SMTP_SERVER = "smtp-mail.outlook.com"
 SMTP_PORT = 587
-FROM_EMAIL = "gpradodev@hotmail.com"
+FROM_EMAIL = "COLOCAR E-MAIL PARA ENVIO"
 EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD') 
 TIMEZONE = pytz.timezone('America/Sao_Paulo')
 
@@ -142,4 +142,4 @@ hosts_input = input("Digite os IPs ou nomes dos hosts para verificar a conectivi
 
 hosts = [host.strip() for host in hosts_input.split(',')]
     
-ping_multiple_hosts(hosts, count=4, interval=20, alert_email="guilherme.prado@bpt.eng.br")
+ping_multiple_hosts(hosts, count=4, interval=20, alert_email="EMAIL DE DESTINO AQUI")
